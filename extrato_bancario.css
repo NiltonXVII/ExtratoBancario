@@ -1,0 +1,154 @@
+/* Definição das fontes Montserrat */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f1f5f9; /* Fundo cinza claro para a página */
+}
+
+/* Cabeçalho */
+.corpo_cabecalho {
+    background-color: #002D4B; /* Azul escuro principal */
+}
+
+.texto_amarelo {
+    color: #FDFC30 !important; /* Amarelo vibrante */
+}
+
+.borda_amarela {
+    border: 3px solid #FDFC30;
+}
+
+.borda_amarela_header {
+    border-bottom: 4px solid #FDFC30;
+}
+
+.nav-link.active {
+    font-weight: 700; /* Destaque maior para o link ativo */
+    border-bottom: 3px solid #FDFC30;
+    color: #FDFC30 !important;
+}
+
+/* Botão Amarelo Principal */
+.btn_amarelo {
+    background-color: #FDFC30;
+    color: #002D4B;
+    border: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn_amarelo:hover {
+    background-color: #e6d500;
+    color: #002D4B;
+}
+
+/* Animação de sublinhado */
+.texto_animado {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.texto_animado::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #FDFC30;
+    transition: width 0.3s ease;
+}
+
+.texto_animado:hover::after {
+    width: 100%;
+}
+
+/* Corpo Principal */
+.texto_azul_escuro {
+    color: #002D4B;
+}
+
+/* Rodapé */
+.corpo_rodape {
+    background-color: #343a40; /* Um cinza mais escuro e moderno */
+}
+
+.social_icons {
+    gap: 20px;
+}
+
+.icone_social {
+    font-size: 1.8rem;
+    color: #FDFC30;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icone_social:hover {
+    transform: scale(1.2);
+}
+
+.social_icons a:hover .bi-facebook {
+    color: #1877F2;
+}
+
+.social_icons a:hover .bi-instagram {
+    color: #E4405F;
+}
+
+.social_icons a:hover .bi-twitter-x {
+    color: #000000;
+}
+
+.social_icons a:hover .bi-linkedin {
+    color: #0A66C2;
+}
+
+
+/* ESTILOS PARA O MODAL (ADICIONADOS) */
+.cabecalho_modal {
+    background-color: #002D4B;
+    color: #FDFC30;
+    border-bottom: 2px solid #FDFC30;
+}
+
+.conteudo_modal_cadastro {
+    border: 1px solid #002D4B;
+}
+
+.cabecalho_modal .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+.corpo_modal .input-group-text {
+    background-color: #002D4B;
+    color: #FDFC30;
+    border-color: #002D4B;
+}
+
+.rodape_modal .botao_principal_modal {
+    background-color: #002D4B;
+    border-color: #002D4B;
+    color: #FDFC30;
+    font-weight: bold;
+}
+
+.rodape_modal .botao_principal_modal:hover {
+    background-color: #001f33;
+    border-color: #001f33;
+    color: #FFFFFF;
+}
